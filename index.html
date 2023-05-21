@@ -9,27 +9,28 @@
 
 <body>
     <header>
-        <h1>Paul Joseph Adame | Vinarc</h1>
+        <h2>Paul Joseph Adame | Vinarc</h2>
     </header>
 
     <nav>
         <ul class="nav-links">
-            <li><a href="https://pauladame07.github.io/Portfolio/" class="active">Home</a></li>
-            <li><a href="#photos" class="active" onclick="showGallery('photos')">Photos</a></li>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#photos" onclick="showGallery('photos')">Photos</a></li>
             <li><a href="#infographics" onclick="showGallery('infographics')">Infographics</a></li>
             <li><a href="#websites" onclick="showGallery('websites')">Websites</a></li>
+            <li><a href="https://www.linkedin.com/in/pauljosephadame/" target="_blank">LinkedIn</a></li>
         </ul>
     </nav>
 
-    <section>
-        <h1>"Hello, I'm Paul, a 23-year-old professional specializing in graphic design, software development, web
-            development, and photography. With a passion for creative expression and problem-solving, I bring a unique
-            blend of skills to the table. As a graphic designer, I have an eye for aesthetics and a knack for crafting
-            visually stunning designs. As a software and web developer, I have the technical expertise to bring ideas to
-            life and create seamless user experiences. Additionally, my background in photography allows me to capture
-            captivating moments and tell stories through visuals. With a diverse skill set and a dedication to
-            delivering high-quality work, I am excited to collaborate and bring innovative ideas to life. Let's create
-            something extraordinary together"</h1>
+    <section id="home">
+        <h1>Hello, I'm Paul a 23-year-old professional specializing in graphic design, software development, web development, and
+            photography. With a passion for creative expression and problem-solving, I bring a unique blend of skills to
+            the table. As a graphic designer, I have an eye for aesthetics and a knack for crafting visually stunning
+            designs. As a software and web developer, I have the technical expertise to bring ideas to life and create
+            seamless user experiences. Additionally, my background in photography allows me to capture captivating
+            moments and tell stories through visuals. With a diverse skill set and a dedication to delivering
+            high-quality work, I am excited to collaborate and bring innovative ideas to life. Let's create something
+            extraordinary together.</h1>
     </section>
 
     <section id="photos">
@@ -52,26 +53,23 @@
         </div>
     </section>
 
-
-    <div id="Websites">
+    <section id="websites">
         <h2>Websites</h2>
-        <a href="https://www.yourwealthhubadvice.com/" target="_blank">
-            <img src="Photos/ywha.png" alt="Infographic 1" onclick="zoomImage(this.src)">
-        </a>
-        <a href="https://www.vinarc.com.au/" target="_blank">
-            <img src="Photos/vinarc.png" alt="Infographic 2" onclick="zoomImage(this.src)">
-        </a>
-        <a href="https://www.jvmwc.com.au/" target="_blank">
-            <img src="Photos/jm.png" alt="Infographic 3" onclick="zoomImage(this.src)">
-        </a>
-        <a href="https://www.makeworkoptional.com.au/" target="_blank">
-            <img src="Photos/mwo.png" alt="Infographic 4" onclick="zoomImage(this.src)">
-        </a>
-    </div>
-
-
+        <div class="gallery">
+            <a href="https://www.yourwealthhubadvice.com/" target="_blank">
+                <img src="Photos/ywha.png" alt="Website 1" onclick="zoomImage(this.src)">
+            </a>
+            <a href="https://www.vinarc.com.au/" target="_blank">
+                <img src="Photos/vinarc.png" alt="Website 2" onclick="zoomImage(this.src)">
+            </a>
+            <a href="https://www.jvmwc.com.au/" target="_blank">
+                <img src="Photos/jm.png" alt="Website 3" onclick="zoomImage(this.src)">
+            </a>
+            <a href="https://www.makeworkoptional.com.au/" target="_blank">
+                <img src="Photos/mwo.png" alt="Website 4" onclick="zoomImage(this.src)">
+            </a>
+        </div>
     </section>
-
 
     <script src="script.js"></script>
 </body>
