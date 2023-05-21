@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul Joseph Adame | Vinarc</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Paul Joseph Adame | Vinarc</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#photos" class="active" onclick="showGallery('photos')">Photos</a></li>
+            <li><a href="#infographics" onclick="showGallery('infographics')">Infographics</a></li>
+            <li><a href="#websites" onclick="showGallery('websites')">Websites</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h1>"Hello, I'm Paul, a 24-year-old professional specializing in graphic design, software development, web
+            development, and photography. With a passion for creative expression and problem-solving, I bring a unique
+            blend of skills to the table. As a graphic designer, I have an eye for aesthetics and a knack for crafting
+            visually stunning designs. As a software and web developer, I have the technical expertise to bring ideas to
+            life and create seamless user experiences. Additionally, my background in photography allows me to capture
+            captivating moments and tell stories through visuals. With a diverse skill set and a dedication to
+            delivering high-quality work, I am excited to collaborate and bring innovative ideas to life. Let's create
+            something extraordinary together"</h1>
+    </section>
+
+    <section id="photos">
+        <h2>Photos</h2>
+        <div class="gallery">
+            <img src="Photos/YWHA Federal Budget 2023.jpg" alt="Photo 1" onclick="zoomImage(this.src)">
+            <img src="Photos/Black and White Mug.jpg" alt="Photo 2" onclick="zoomImage(this.src)">
+            <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Photo 3" onclick="zoomImage(this.src)">
+        </div>
+    </section>
+
+    <section id="infographics">
+        <h2>Infographics</h2>
+        <div class="gallery">
+            <img src="Photos/6 Budget tips 2.jpg" alt="Infographic 1" onclick="zoomImage(this.src)">
+            <img src="Photos/Mike 1.jpg" alt="Infographic 2" onclick="zoomImage(this.src)">
+            <img src="Photos/Group 3.png" alt="Infographic 3" onclick="zoomImage(this.src)">
+            <img src="Photos/Mike 4.jpg" alt="Infographic 4" onclick="zoomImage(this.src)">
+            <img src="Photos/MDRT Export Congratulations.jpg" alt="Infographic 5" onclick="zoomImage(this.src)">
+        </div>
+    </section>
+
+
+    <section id="websites">
+        <h2>Websites</h2>
+        <img src="Photos/ywha.png" alt="websites 1" onclick="zoomImage(this.src)">
+        <img src="Photos/vinarc.png" alt="websites 2" onclick="zoomImage(this.src)">
+        <img src="Photos/jm.png" alt="websites 3" onclick="zoomImage(this.src)">
+        <img src="Photos/mwo.png" alt="websites 4" onclick="zoomImage(this.src)">
+        </div>
+
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
