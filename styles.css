@@ -226,3 +226,40 @@ section {
     font-size: 18px;
     color: #666;
 }
+
+#discord-bot, #discord-bot {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    width: 45%;
+    text-align: center;
+}
+
+.discord-entry, .discord-entry {
+    margin-bottom: 20px;
+}
+
+.discord-entry h3, .discord-entry h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+.discord-entry p, .discord-entry p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.experience-entry ul {
+    list-style-type: disc;
+    margin: 10px 0 20 20px;
+    text-align: left;
+}
+
+.experience-entry ul li {
+    margin: 10px ;
+    font-size: 18px;
+    color: #666;
+}
