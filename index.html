@@ -1,125 +1,135 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Joseph Adame</title>
+    <title>Paul Joseph Adame - Software Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
-
 <body>
     <header>
-        <h2>Paul Joseph Adame</h2>
+        <div class="container">
+            <h1>Paul Joseph Adame</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#infographics">Infographics</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul class="nav-links">
-            <li><a href="https://pauladame07.github.io/Portfolio/" class="active">Home</a></li>
-            <li><a href="#photos" onclick="showGallery('photos')">Photos</a></li>
-            <li><a href="#infographics" onclick="showGallery('infographics')">Infographics</a></li>
-            <li><a href="#websites" onclick="showGallery('websites')">Websites</a></li>
-            <li><a href="https://www.linkedin.com/in/pauljosephadame/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </nav>
-
-    <section id="home">
-        <h1>Hello, I'm Paul, a 25-year-old professional specializing in graphic design, software development, web development, and
-            photography. With a passion for creative expression and problem-solving, I bring a unique blend of skills to
-            the table. As a graphic designer and Video Editor, I have an eye for aesthetics and a knack for crafting visually stunning
-            designs. As a software and web developer, I have the technical expertise to bring ideas to life and create
-            seamless user experiences. Additionally, my background in photography allows me to capture captivating
-            moments and tell stories through visuals. With a diverse skill set and a dedication to delivering
-            high-quality work, I am excited to collaborate and bring innovative ideas to life. Let's create something
-            extraordinary together.
-        </h1>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-entry">
-            <h3>Far Eastern University - Alabang</h3>
-            <p>Bachelor of Science in Computer Science Major in Software Engineering</p>
-            <p>2019 - 2021</p>
-        </div>
-        <div class="education-entry">
-            <h3>Christ the King College of Science and Technology</h3>
-            <p>Information and Communications Technology</p>
-            <p>2017 - 2019</p>
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Hello, I'm <span class="typewriter"></span></h2>
+                <p>A passionate Software Developer specializing in building seamless web and software solutions.</p>
+                <a href="#projects" class="btn">View My Work</a>
+            </div>
         </div>
     </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-entry">
-            <h3>VINARC PTY LTD.</h3>
-            <p>Coder | Web Developer | Software Developer | Digital Marketing Editor</p>
-            <p>2021 - 2024</p>
-            <ul>
-                <li>Programming and coding templates for Midwinter and Xplan.</li>
-                <li>Managing multiple websites, updating content, and ensuring security using SquareSpace and WordPress.</li>
-                <li>Creating graphic posters and Instagram and Facebook Reels for our social media accounts.</li>
-                <li>Providing IT support for software, hardware, and network issues.</li>
-            </ul>
-        </div>
-        <div class="experience-entry">
-            <h3>Far Eastern University - Alabang</h3>
-            <p>Director for Documentation</p>
-            <p>2019 - 2021</p>
-            <ul>
-                <li>Organizing documents for the organization, managing live webinars via OBS, and creating posters and videos for publication on Facebook.</li>
-                <li>Microsoft Technology Associate – Introduction to Java</li>
 
-            </ul>
+    <section id="education" class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Far Eastern University - Alabang</h3>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <p class="education-date">2019 - 2021</p>
+                </div>
+                <div class="education-card">
+                    <h3>Christ the King College of Science and Technology</h3>
+                    <p>Information and Communications Technology</p>
+                    <p class="education-date">2017 - 2019</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>VINARC PTY LTD.</h3>
+                    <p class="timeline-date">2021 - 2024</p>
+                    <ul>
+                        <li>Developed and maintained web applications using modern frameworks.</li>
+                        <li>Managed multiple websites, ensuring security and performance.</li>
+                        <li>Created graphic posters and social media content for marketing campaigns.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="photos">
-        <h2>Photos</h2>
-        <div class="gallery">
-            <img src="Photos/YWHA Federal Budget 2023.jpg" alt="Photo 1" onclick="zoomImage(this.src)">
-            <img src="Photos/Black and White Mug.jpg" alt="Photo 2" onclick="zoomImage(this.src)">
-            <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Photo 3" onclick="zoomImage(this.src)">
+        <div class="container">
+            <h2>Photos</h2>
+            <div class="gallery">
+                <img src="Photos/YWHA Federal Budget 2023.jpg" alt="Photo 1">
+                <img src="Photos/Black and White Mug.jpg" alt="Photo 2">
+                <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Photo 3">
+            </div>
         </div>
     </section>
 
     <section id="infographics">
-        <h2>Infographics</h2>
-        <div class="gallery">
-            <img src="Photos/6 Budget tips 2.jpg" alt="Infographic 1" onclick="zoomImage(this.src)">
-            <img src="Photos/Cropped 1.jpg" alt="Infographic 2" onclick="zoomImage(this.src)">
-            <img src="Photos/Group 3.png" alt="Infographic 3" onclick="zoomImage(this.src)">
-            <img src="Photos/test 1.png" alt="Infographic 4" onclick="zoomImage(this.src)">
-            <img src="Photos/1.png" alt="Infographic 5" onclick="zoomImage(this.src)">
+        <div class="container">
+            <h2>Infographics</h2>
+            <div class="gallery">
+                <img src="Photos/6 Budget tips 2.jpg" alt="Infographic 1">
+                <img src="Photos/Cropped 1.jpg" alt="Infographic 2">
+                <img src="Photos/Group 3.png" alt="Infographic 3">
+                <img src="Photos/test 1.png" alt="Infographic 4">
+                <img src="Photos/1.png" alt="Infographic 5">
+            </div>
         </div>
     </section>
 
-    <section id="websites">
-        <h2>Websites</h2>
-        <div class="gallery">
-            <a href="https://www.yourwealthhubadvice.com/" target="_blank">
-                <img src="Photos/ywha.png" alt="Website 1" onclick="zoomImage(this.src)">
-            </a>
-            <a href="https://www.vinarc.com.au/" target="_blank">
-                <img src="Photos/vinarc.png" alt="Website 2" onclick="zoomImage(this.src)">
-            </a>
-            <a href="https://www.jvmwc.com.au/" target="_blank">
-                <img src="Photos/jm.png" alt="Website 3" onclick="zoomImage(this.src)">
-            </a>
-            <a href="https://www.makeworkoptional.com.au/" target="_blank">
-                <img src="Photos/mwo.png" alt="Website 4" onclick="zoomImage(this.src)">
-            </a>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Your Wealth Hub Advice</h3>
+                    <p>A financial advisory platform providing insights and tools for wealth management.</p>
+                    <a href="https://www.yourwealthhubadvice.com/" target="_blank" class="btn">Visit Website</a>
+                </div>
+                <div class="project-card">
+                    <h3>VINARC</h3>
+                    <p>A professional services firm offering financial planning and investment advice.</p>
+                    <a href="https://www.vinarc.com.au/" target="_blank" class="btn">Visit Website</a>
+                </div>
+                <div class="project-card">
+                    <h3>JVM Wealth Creation</h3>
+                    <p>A platform dedicated to helping clients achieve financial independence.</p>
+                    <a href="https://www.jvmwc.com.au/" target="_blank" class="btn">Visit Website</a>
+                </div>
+                <div class="project-card">
+                    <h3>Make Work Optional</h3>
+                    <p>A financial planning website aimed at making work optional through smart investments.</p>
+                    <a href="https://www.makeworkoptional.com.au/" target="_blank" class="btn">Visit Website</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="discord-bot">
-        <h2>Discord Bot</h2>
-        <div class="discord-entry">
-            <h3><a href="https://discord.com/oauth2/authorize?client_id=1307007195468267520" class="active">Metar Bread</a></h3>
-            <p>The Metar Bread provides real-time weather information for airports worldwide using their ICAO codes. With just a simple /metar command, users can retrieve detailed METAR (Meteorological Aerodrome Report) data, essential for aviation enthusiasts, pilots, and weather geeks.</p>
-            <p>2024</p> 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Paul Joseph Adame. All rights reserved.</p>
         </div>
-    </section>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-
 </html>
