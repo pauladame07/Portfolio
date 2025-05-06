@@ -1,59 +1,53 @@
-// GSAP Animations
-gsap.registerPlugin(ScrollTrigger);
+// === NAVBAR HIDE ON SCROLL ===
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
 
-// Hero Section Typewriter Effect
-const typewriterText = "Paul Joseph Adame";
-const typewriterElement = document.querySelector(".typewriter");
+window.addEventListener('scroll', function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    // scroll down
+    navbar.classList.add('hide');
+  } else {
+    // scroll up
+    navbar.classList.remove('hide');
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
 
-let i = 0;
-const typewriter = () => {
-    if (i < typewriterText.length) {
-        typewriterElement.textContent += typewriterText.charAt(i);
-        i++;
-        setTimeout(typewriter, 100);
+// === SCROLL TO TOP BUTTON ===
+const scrollBtn = document.getElementById('scrollToTopBtn');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    scrollBtn.style.display = 'block';
+  } else {
+    scrollBtn.style.display = 'none';
+  }
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// === IMAGE CAROUSEL SCROLL ===
+const gallery = document.querySelector('.gallery');
+
+if (gallery) {
+  gallery.addEventListener('wheel', (evt) => {
+    evt.preventDefault();
+    gallery.scrollLeft += evt.deltaY;
+  });
+}
+
+// === ZOOM IMAGE ON CLICK ===
+document.querySelectorAll('.zoomable').forEach((img) => {
+  img.addEventListener('click', function () {
+    if (this.style.transform === 'scale(1.5)') {
+      this.style.transform = 'scale(1)';
+      this.style.cursor = 'zoom-in';
+    } else {
+      this.style.transform = 'scale(1.5)';
+      this.style.cursor = 'zoom-out';
     }
-};
-typewriter();
-
-// Scroll Animations
-gsap.from(".hero-content", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    delay: 0.5,
-});
-
-gsap.from(".project-card", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: ".projects",
-        start: "top 80%",
-    },
-});
-
-gsap.from(".timeline-item", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    stagger: 0.2,
-    scrollTrigger: {
-        trigger: ".experience",
-        start: "top 80%",
-    },
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-
-        if (target) {
-            window.scrollTo({
-                top: target.offsetTop - 50, // Adjust offset if needed
-                behavior: "smooth"
-            });
-        }
-    });
-});
+  });
 });
