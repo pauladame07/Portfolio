@@ -23,6 +23,24 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.from(".timeline-item", { opacity: 0, y: 50, duration: 1, stagger: 0.2, scrollTrigger: { trigger: ".experience", start: "top 80%" }});
     gsap.from(".education-card", { opacity: 0, y: 50, duration: 1, stagger: 0.2, scrollTrigger: { trigger: ".education", start: "top 80%" }});
 
+    document.addEventListener('DOMContentLoaded', () => {
+    // ... (all existing JS code inside DOMContentLoaded) ...
+
+    // GSAP Animation for Contact Me Section
+    gsap.from(".contact-section h2, .contact-intro, .contact-links > .contact-btn", {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        stagger: 0.15, // Animate elements one after another
+        scrollTrigger: {
+            trigger: ".contact-section",
+            start: "top 85%", // Start animation when 85% of the section is visible
+            toggleActions: "play none none none", // Play animation once
+        }
+    });
+
+    // ... (rest of the JS code inside DOMContentLoaded, like Lightbox, Footer Year, etc.) ...
+});
     // Smooth Scroll for Nav Links
     const headerOffset = document.querySelector('header')?.offsetHeight || 70;
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
