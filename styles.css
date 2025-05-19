@@ -180,6 +180,96 @@ section h2 {
     margin-bottom: 10px;
 }
 
+/* --- Contact Me Section --- */
+.contact-section {
+    background-color: #1a1a1a; /* Slightly different dark shade or keep consistent */
+    padding: 80px 0 100px 0; /* More padding at the bottom */
+}
+
+.contact-section h2 {
+    /* Uses existing section h2 styles */
+    margin-bottom: 25px;
+}
+
+.contact-intro {
+    color: #d0d0d0; /* Lighter text for better readability */
+    font-size: 1.1rem;
+    max-width: 700px; /* Slightly wider */
+    margin: 0 auto 50px auto; /* Increased bottom margin */
+    line-height: 1.75;
+    font-weight: 400; /* Normal weight */
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.contact-btn {
+    /* Inherits .btn styles:
+       display: inline-block;
+       margin-top: 15px; (original .btn has this, we might override or adjust)
+       padding: 12px 28px;
+       text-decoration: none;
+       font-weight: 600;
+       border-radius: 8px;
+       transition: background 0.3s ease, transform 0.2s ease;
+       font-size: 1rem;
+    */
+    margin-top: 0; /* Remove margin-top from general .btn if it interferes */
+    display: inline-flex; /* For aligning icon and text */
+    align-items: center;
+    gap: 12px; /* Space between icon and text */
+    min-width: 200px; /* Minimum width for better button appearance */
+    justify-content: center; /* Center content within button */
+}
+
+/* Specific button styles */
+.contact-btn.email-btn {
+    background-color: #00c3ff; /* Primary accent color */
+    color: #121212; /* Dark text for contrast */
+    border: 2px solid #00c3ff; /* Ensure border consistency */
+}
+.contact-btn.email-btn:hover {
+    background-color: #00a9e0; /* Darker shade on hover */
+    color: #121212;
+    border-color: #00a9e0;
+    transform: translateY(-2px);
+}
+
+.contact-btn.linkedin-btn {
+    background-color: #0077B5; /* LinkedIn blue */
+    color: #ffffff;
+    border: 2px solid #0077B5; /* Ensure border consistency */
+}
+.contact-btn.linkedin-btn:hover {
+    background-color: #005e90; /* Darker LinkedIn blue */
+    color: #ffffff;
+    border-color: #005e90;
+    transform: translateY(-2px);
+}
+
+/* Adjust Discord Bot section for single item display using timeline styles */
+#discobot .timeline {
+    max-width: 700px; /* Adjust if the card is too wide or narrow */
+    grid-template-columns: 1fr; /* Ensure only one column for the single item */
+}
+#discobot .timeline-item {
+    /* Styles from .timeline-item are already applied */
+    text-align: center; /* Center the content of the Discord bot card */
+}
+#discobot .timeline-item img {
+    margin-left: auto;
+    margin-right: auto; /* Center the image */
+}
+#discobot .timeline-item ul {
+    text-align: left; /* Keep list items left-aligned */
+    display: inline-block; /* To make text-align:left work within centered parent */
+    max-width: 100%;
+}
 
 /* --- CAROUSEL STYLES --- */
 .carousel-container {
