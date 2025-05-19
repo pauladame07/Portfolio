@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul Joseph Adame - Software Developer</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <div class="container">
-            <h1>Paul Joseph Adame</h1>
+            <h1 class="logo-text">PJA</h1>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -31,7 +31,7 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h2>Hello, I'm Paul Adame <span class="typewriter"></span></h2>
+                <h2>Hello, I'm <span class="typewriter"></span></h2>
                 <p>A 25-year-old professional specializing in graphic design, software development, web development, and photography.
                     With a passion for creative expression and problem-solving, I bring a unique blend of skills to the table. As a
                     graphic designer and Video Editor, I have an eye for aesthetics and a knack for crafting visually stunning designs.
@@ -86,15 +86,15 @@
             <div class="carousel-container" id="photos-carousel">
                 <div class="carousel-track">
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/YWHA Federal Budget 2023.jpg" alt="Photo 1">
+                        <img src="Photos/YWHA Federal Budget 2023.jpg" alt="YWHA Federal Budget 2023 Poster" class="lightbox-trigger">
                     </div>
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/Black and White Mug.jpg" alt="Photo 2">
+                        <img src="Photos/Black and White Mug.jpg" alt="Black and White Mug Design" class="lightbox-trigger">
                     </div>
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Photo 3">
+                        <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Federal Budget 2022 Poster" class="lightbox-trigger">
                     </div>
-                    </div>
+                </div>
                 <button class="carousel-button prev" aria-label="Previous Photo">&#10094;</button>
                 <button class="carousel-button next" aria-label="Next Photo">&#10095;</button>
             </div>
@@ -107,21 +107,21 @@
             <div class="carousel-container" id="infographics-carousel">
                 <div class="carousel-track">
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/6 Budget tips 2.jpg" alt="Infographic 1">
+                        <img src="Photos/6 Budget tips 2.jpg" alt="6 Budget Tips Infographic" class="lightbox-trigger">
                     </div>
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/Cropped 1.jpg" alt="Infographic 2">
+                        <img src="Photos/Cropped 1.jpg" alt="Financial Infographic Sample 1" class="lightbox-trigger">
                     </div>
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/Group 3.png" alt="Infographic 3">
+                        <img src="Photos/Group 3.png" alt="Financial Infographic Sample 2" class="lightbox-trigger">
                     </div>
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/test 1.png" alt="Infographic 4">
+                        <img src="Photos/test 1.png" alt="Financial Infographic Sample 3" class="lightbox-trigger">
                     </div>
                     <div class="carousel-slide single-image-slide">
-                        <img src="Photos/1.png" alt="Infographic 5">
+                        <img src="Photos/1.png" alt="Financial Infographic Sample 4" class="lightbox-trigger">
                     </div>
-                    </div>
+                </div>
                 <button class="carousel-button prev" aria-label="Previous Infographic">&#10094;</button>
                 <button class="carousel-button next" aria-label="Next Infographic">&#10095;</button>
             </div>
@@ -161,7 +161,7 @@
                             </div>
                         </div>
                     </div>
-                    </div>
+                </div>
                 <button class="carousel-button prev" aria-label="Previous Projects">&#10094;</button>
                 <button class="carousel-button next" aria-label="Next Projects">&#10095;</button>
             </div>
@@ -174,7 +174,7 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <h3>Metar Bread</h3>
-                    <img src="Photos/ILoveBread_for_Paul.png" alt="bread">
+                    <img src="Photos/ILoveBread_for_Paul.png" alt="Metar Bread Discord Bot Icon">
                     <p class="timeline-date">2024</p>
                     <ul>
                         <li>The Metar Bread provides real-time weather information for airports worldwide using their ICAO codes.
@@ -189,12 +189,19 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Paul Joseph Adame. All rights reserved.</p>
+            <p>&copy; <span id="currentYear"></span> Paul Joseph Adame. All rights reserved.</p>
         </div>
     </footer>
 
-    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
-        <i class="fas fa-arrow-up"></i> </button>
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="lightbox-close" aria-label="Close lightbox">&times;</span>
+        <img class="lightbox-content" id="lightboxImg" alt="Enlarged image">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
