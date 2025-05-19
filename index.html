@@ -32,13 +32,13 @@
         <div class="container">
             <div class="hero-content">
                 <h2>Hello, I'm Paul Adame <span class="typewriter"></span></h2>
-                <p>A 25-year-old professional specializing in graphic design, software development, web development, and photography. 
-                    With a passion for creative expression and problem-solving, I bring a unique blend of skills to the table. As a 
+                <p>A 25-year-old professional specializing in graphic design, software development, web development, and photography.
+                    With a passion for creative expression and problem-solving, I bring a unique blend of skills to the table. As a
                     graphic designer and Video Editor, I have an eye for aesthetics and a knack for crafting visually stunning designs.
-                     As a software and web developer, I have the technical expertise to bring ideas to life and create seamless user experiences. 
-                     Additionally, my background in photography allows me to capture captivating moments and tell stories through visuals.
-                      With a diverse skill set and a dedication to delivering high-quality work, I am excited to collaborate and bring 
-                      innovative ideas to life. Let's create something extraordinary together.</p>
+                    As a software and web developer, I have the technical expertise to bring ideas to life and create seamless user experiences.
+                    Additionally, my background in photography allows me to capture captivating moments and tell stories through visuals.
+                    With a diverse skill set and a dedication to delivering high-quality work, I am excited to collaborate and bring
+                    innovative ideas to life. Let's create something extraordinary together.</p>
                 <a href="#photos" class="btn">View My Work</a>
             </div>
         </div>
@@ -72,7 +72,7 @@
                     <ul>
                         <li>Programming and coding templates for Midwinter and Xplan.</li>
                         <li>Managing multiple websites, updating content, and ensuring security using SquareSpace and WordPress.</li>
-                        <li>Creating graphic posters and Instagram and Facebook Reels for our social media accounts.
+                        <li>Creating graphic posters and Instagram and Facebook Reels for our social media accounts.</li>
                         <li>Providing IT support for software, hardware, and network issues.</li>
                     </ul>
                 </div>
@@ -80,26 +80,50 @@
         </div>
     </section>
 
-    <section id="photos">
+    <section id="photos" class="photos-section">
         <div class="container">
             <h2>Photos</h2>
-            <div class="gallery">
-                <img src="Photos/YWHA Federal Budget 2023.jpg" alt="Photo 1">
-                <img src="Photos/Black and White Mug.jpg" alt="Photo 2">
-                <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Photo 3">
+            <div class="carousel-container" id="photos-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/YWHA Federal Budget 2023.jpg" alt="Photo 1">
+                    </div>
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/Black and White Mug.jpg" alt="Photo 2">
+                    </div>
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/Federal Budget 2022 REVISED 1423.jpg" alt="Photo 3">
+                    </div>
+                    </div>
+                <button class="carousel-button prev" aria-label="Previous Photo">&#10094;</button>
+                <button class="carousel-button next" aria-label="Next Photo">&#10095;</button>
             </div>
         </div>
     </section>
 
-    <section id="infographics">
+    <section id="infographics" class="infographics-section">
         <div class="container">
             <h2>Infographics</h2>
-            <div class="gallery">
-                <img src="Photos/6 Budget tips 2.jpg" alt="Infographic 1">
-                <img src="Photos/Cropped 1.jpg" alt="Infographic 2">
-                <img src="Photos/Group 3.png" alt="Infographic 3">
-                <img src="Photos/test 1.png" alt="Infographic 4">
-                <img src="Photos/1.png" alt="Infographic 5">
+            <div class="carousel-container" id="infographics-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/6 Budget tips 2.jpg" alt="Infographic 1">
+                    </div>
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/Cropped 1.jpg" alt="Infographic 2">
+                    </div>
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/Group 3.png" alt="Infographic 3">
+                    </div>
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/test 1.png" alt="Infographic 4">
+                    </div>
+                    <div class="carousel-slide single-image-slide">
+                        <img src="Photos/1.png" alt="Infographic 5">
+                    </div>
+                    </div>
+                <button class="carousel-button prev" aria-label="Previous Infographic">&#10094;</button>
+                <button class="carousel-button next" aria-label="Next Infographic">&#10095;</button>
             </div>
         </div>
     </section>
@@ -107,31 +131,39 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2>Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="Photos/ywha.png" alt="Your Wealth Hub Advice">
-                    <h3>Your Wealth Hub Advice</h3>
-                    <p>A financial advisory platform providing insights and tools for wealth management.</p>
-                    <a href="https://www.yourwealthhubadvice.com/" target="_blank" class="btn">Visit Website</a>
-                </div>
-                <div class="project-card">
-                    <img src="Photos/vinarc.png" alt="VINARC">
-                    <h3>VINARC</h3>
-                    <p>A professional services firm offering financial planning and investment advice.</p>
-                    <a href="https://www.vinarc.com.au/" target="_blank" class="btn">Visit Website</a>
-                </div>
-                <div class="project-card">
-                    <img src="Photos/jm.png" alt="JVM Wealth Creation">
-                    <h3>JVM Wealth Creation</h3>
-                    <p>A platform dedicated to helping clients achieve financial independence.</p>
-                    <a href="https://www.jvmwc.com.au/" target="_blank" class="btn">Visit Website</a>
-                </div>
-                <div class="project-card">
-                    <img src="Photos/mwo.png" alt="Make Work Optional">
-                    <h3>Make Work Optional</h3>
-                    <p>A financial planning website aimed at making work optional through smart investments.</p>
-                    <a href="https://www.makeworkoptional.com.au/" target="_blank" class="btn">Visit Website</a>
-                </div>
+            <div class="carousel-container" id="projects-carousel">
+                <div class="carousel-track">
+                    <div class="carousel-slide">
+                        <div class="project-slide-content">
+                            <div class="project-card">
+                                <img src="Photos/ywha.png" alt="Your Wealth Hub Advice">
+                                <h3>Your Wealth Hub Advice</h3>
+                                <p>A financial advisory platform providing insights and tools for wealth management.</p>
+                                <a href="https://www.yourwealthhubadvice.com/" target="_blank" class="btn">Visit Website</a>
+                            </div>
+                            <div class="project-card">
+                                <img src="Photos/vinarc.png" alt="VINARC">
+                                <h3>VINARC</h3>
+                                <p>A professional services firm offering financial planning and investment advice.</p>
+                                <a href="https://www.vinarc.com.au/" target="_blank" class="btn">Visit Website</a>
+                            </div>
+                            <div class="project-card">
+                                <img src="Photos/jm.png" alt="JVM Wealth Creation">
+                                <h3>JVM Wealth Creation</h3>
+                                <p>A platform dedicated to helping clients achieve financial independence.</p>
+                                <a href="https://www.jvmwc.com.au/" target="_blank" class="btn">Visit Website</a>
+                            </div>
+                            <div class="project-card">
+                                <img src="Photos/mwo.png" alt="Make Work Optional">
+                                <h3>Make Work Optional</h3>
+                                <p>A financial planning website aimed at making work optional through smart investments.</p>
+                                <a href="https://www.makeworkoptional.com.au/" target="_blank" class="btn">Visit Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <button class="carousel-button prev" aria-label="Previous Projects">&#10094;</button>
+                <button class="carousel-button next" aria-label="Next Projects">&#10095;</button>
             </div>
         </div>
     </section>
@@ -145,9 +177,9 @@
                     <img src="Photos/ILoveBread_for_Paul.png" alt="bread">
                     <p class="timeline-date">2024</p>
                     <ul>
-                        <li>The Metar Bread provides real-time weather information for airports worldwide using their ICAO codes. 
+                        <li>The Metar Bread provides real-time weather information for airports worldwide using their ICAO codes.
                             With just a simple /metar command, users can retrieve detailed METAR (Meteorological Aerodrome Report)
-                             data, essential for aviation enthusiasts, pilots, and weather geeks.</li>
+                            data, essential for aviation enthusiasts, pilots, and weather geeks.</li>
                         <li>The bot is deployed on AWS and runs 24/7 to ensure high availability and performance.</li>
                     </ul>
                 </div>
@@ -160,6 +192,9 @@
             <p>&copy; 2025 Paul Joseph Adame. All rights reserved.</p>
         </div>
     </footer>
+
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+        <i class="fas fa-arrow-up"></i> </button>
 
     <script src="script.js"></script>
 </body>
